@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+header {
+    background:linear-gradient(90deg, red, #01265a);
+   
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 70px;
+}
+.menu ul {
+    list-style: none;
+}
+.dropdown {
+    display: none;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+}
+ a:hover {
+    font-weight: bolder;
+    color:  #0c4fad;
+}
+@media screen and (max-width:800px) {
+.menu {
+    display: none;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+.dropbtn {
+    color: white;
+    border: 2px solid white;
+    padding: 14px;
+    background-color: black;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(36, 28, 28, 0.2);
+}
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid white;
+}
+.dropdown-content a:nth-child(5) {
+    border-bottom: none;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover
+ .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+}
+#empty_background {
+     background: url(./background/IMG_20220601_095503.jpg);
+     background-position: center;
+     background-size: cover;
+     color: white;
+     text-align: center;
+}
+.empty {
+    height: 80vh;
+}
+#content  {
+     background: url(./background/2_20220524_204203_0001.png);
+     background-position: center;
+     background-size: cover;
+     color: white;
+     text-align: center;
+}
+.cont {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.cont h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.fair_distribute h2, #nfts h2, #road_activate h2, #about_team h2 {
+    font-size: 25px;
+    color: yellow;
+    font-style: italic;
+    text-align: center;
+    padding: 30px 5px 0px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.fair_distribute p, .about {
+    font-size: 17px;
+    text-align: center;
+    padding: 5px;
+}
+#sma {
+    font-size: 14px;
+    padding-bottom: 30px;
+}
+.fair_subhead {
+    text-align: center;
+    font-size: 18px;
+    padding: 0px 0px 20px;
+}
+
+.connect_open, .team_group, .nfts_image {
+    margin: 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    grid-row-gap: 10px;
+    grid-column-gap: 15px;
+}
+
+.nfts_image img {
+    width: 100%;
+    border-radius: 30px;
+}
+.connect_open div {
+    background-color: white;
+    margin-left: 20px;
+    min-height: 300px;
+    border-radius: 20px;
+    color: black;
+    
+}
+.connect_open p {
+    padding: 10px;
+}
+.connect_open h3 {
+    padding: 20px  30px 10px;
+    text-transform: uppercase;
+    font-style: italic;
+    
+}
+.connect_open img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.connect_open button {
+    margin: 30px 30px;
+    padding: 10px;
+    border-radius: 30px;
+    outline: none;
+    background: black;
+    color: white;
+    font-size: 11px ;
+    cursor: pointer;
+}
+#road_activate h2 {
+    margin-top: 30px;
+}
+#road_activate {
+    text-align: center;
+}
+#road_activate p {
+    margin: 20px 0 0 0;
+}
+.road_active {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    grid-row-gap: 10px;
+    grid-column-gap: 15px;
+    margin-top: 30px;
+}
+.road_active div {
+    background-color: rgb(1, 1, 20);
+    border-radius: 20px;
+    margin: 20px 10px 5px 10px;
+    min-height: 300px;
+    padding: 20px 20px 10px 30px;
+    text-align: center;
+}
+.road_active div > h3 {
+    font-size: 35px;
+    padding-top: 10px;
+}
+.road_active div > p {
+    font-size: 14px;
+}
+.collect {
+    padding-top: 60px;
+}
+.team_group div {
+    background-color: #01265a;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px 20px;
+    box-shadow: 0px 10px 10px 10px black;
+}
+.team_group h4 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+.team_group p {
+    font-size: 13px;
+
+}
+.team_group .meager {
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.team_group img {
+    width: 80%;
+    border-radius: 20px;
+}
+
+#about_team {
+    background-image: url(./background/3_20220524_204326_0002.png);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+footer {
+    background:linear-gradient(90deg, red, #01265a); 
+}
+footer img {
+    width: 60px;
+
+}
+footer div {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+footer a {
+    color: white;
+    text-decoration: none;  
+    padding: 10px 30px; 
+}
+footer p {
+    padding-left: 10px;
+}
+footer ul {
+    list-style: none;
+    
+}
+footer li {
+    padding: 15px 20px;
+}
+.social_btn i {
+    padding: 0 10px 0 0 ;
+    text-align: center;
+}
+
+/**for screen**/
+
+@media screen and (max-width:400px) {
+footer div {
+    width: 50%;
+}
+footer img {
+    width: 50px;
+}
+footer p {
+    float: left;
+}
+
+footer li a {
+    text-align: left;
+    padding-left: 12px;
+}
+}
